@@ -2,12 +2,12 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
   
-  all_brands = [ ]
+  BRANDS = [ ]
 
   def initialize(brand)
     @brand = brand
-    if !(all_brands.include?(@brand))
-      all_brands << @brand 
+    if !(BRANDS.include?(@brand))
+      BRANDS << @brand 
     end 
   end
 
